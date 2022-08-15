@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Noto+Sans+Arabic:wght@300;400;700&family=Noto+Sans:wght@300;400;500;700&family=Vibes&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat","Noto Sans Arabic","Vibes";
+    background-color: #525461;
+    text-align: right;
+}
+
+.container{
+    width: 1400px;
+    background :linear-gradient(to right ,rgba(0,0,0,1),rgba(0,0,0,0.9),rgba(0,0,0,0.8),rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url("login2.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 18px 18px rgb(40,40,55);
+    height: 91vh;
+    margin: 70px auto;
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction:column;
+}
+
+/* header */
+.loginHeader{
+    display: flex;
+    text-align: center;
+    justify-content: left;
+}
+
+.loginHeader h1{
+    color: white;
+    padding: 50px;
+    padding-top: 24px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.anywhere{
+    margin-left: 70px;
+}
+
+.loginHeader h2{
+    color:rgb(120,120,120);
+    padding-left: 70px;
+    padding-top: 35px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.fa-earth-asia {
+    position: absolute;
+    color:rgb(77, 147, 238);
+    left: 90px;
+    top: 50px;
+    font-size: 40px;
+    position: absolute;
+}
+
+.togetherText{
+    display: flex;
+    flex-direction: row;
+}
+
+#demo{
+    color:rgb(77, 147, 238);
+}
+
+/* body */
+
+.loginBody{
+    display: flex;
+    text-align: left;
+    color:rgb(120,120,120);
+    padding: 40px;
+    flex-direction:column;
+    justify-content: left;
+    /* margin-left: 1.5%; */
+}
+
+.loginBody h1,h2,h3{
+    padding-bottom: 1.5%;
+}
+
+.loginBody h1{
+    color: white;
+}
+.loginBody p,a{
+    padding-bottom: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.box{
+    border-radius: 20px;
+    width: 500px;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+::placeholder{
+    font-family:"Montserrat","Noto Sans Arabic","Vibes";
+}
+
+button{
+    font-family:"Montserrat","Noto Sans Arabic","Vibes";
+}
+
+.firstname, .left, .right{
+    padding-right: 10px;
+}
+
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="email"]{
+    font-size: 20px;
+    font-weight: 400;
+    border: 0;
+    background-color: #323544;
+    display: block;
+    margin: 20px auto;
+    margin-left: 0px;
+    text-align: center;
+    padding: 14px 10px;
+    width: 420px;
+    outline: none;
+    color: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    /* transition: all .1s ease-in; */
+}
+#firstname{
+    width: 205px;
+    margin: 0px auto;
+}
+#lastname{
+    width: 205px;
+    margin: 0px auto;
+}
+
+/* .box input[type="text"]{
+    margin: 0px auto;
+} */
+
+.box input[type="password"],
+.box input[type="email"]{
+    width: 420px;
+}
+
+.box input[type="email"]:focus{
+    border: 2px solid rgb(77, 147, 238);
+    box-shadow: 0px 0px 10px rgba(77, 147, 238,0.5);
+}
+
+.box input[type="password"]:focus{
+    border: 2px solid rgb(77, 147, 238);
+    box-shadow: 0px 0px 10px rgba(77, 147, 238,0.5);
+}
+
+.box input[type="text"]:focus{
+    border: 2px solid rgb(77, 147, 238);
+    box-shadow: 0px 0px 10px rgba(77, 147, 238,0.5);
+}
+
+
+
+.name,.buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+#btnleft{
+    border: 0;
+    background-color: #555B69;
+    display: block;
+    text-align: center;
+    padding: 14px 35px;
+    font-size: 16px;
+    color: white;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    border-radius: 24px;
+    width: 205px;
+    margin: 20px auto;
+}
+#btnright{
+    color: white;
+    border: 0;
+    background: #1C90F5;
+    display: block;
+    text-align: center;
+    padding: 14px 35px;
+    font-size: 16px;
+    margin: 20px auto;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    border-radius: 24px;
+    width: 205px;
+}
+
+.firstnameIcon{
+    position: absolute;
+    left: 278px;
+    top: 360px;
+    color: rgb(180,180,180);;
+}
+
+.lastnameIcon{
+    position: absolute;
+    left: 490px;
+    top: 360px;
+    color: rgb(180,180,180);;
+}
+
+.emailIcon{
+    position: absolute;
+    left: 490px;
+    top: 430px;
+    color: rgb(180,180,180);;
+}
+
+.fa-eye{
+    position: absolute;
+    left: 490px;
+    top: 502px;
+    color: rgb(180,180,180);
+    cursor: pointer;
+}
+

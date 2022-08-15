@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="loginHeader">
+            <i class="fa-solid fa-earth-asia"></i>
+            <div class="togetherText">
+                <h1 class="anywhere">Anywhere App</h1>
+                <h1 id="demo">.</h1>
+            </div>
+            <h2>Home</h2>
+            <h2>Join</h2>
+        </div>
+        <div class="loginBody">
+            <h3>START FOR FREE</h3>
+            <div class="togetherText">
+                <h1>Create new account</h1>
+                <h1 id="demo">.</h1>
+            </div>
+            <div class="togetherText">
+                <p>Already A Member?</>
+                <a href="https://www.w3schools.com/cssref/css3_pr_box-shadow.asp" id="demo">Log In</a>
+            </div>
+            <form class="box" action="">
+                <div class="information">
+                    <div class="name">
+                        <div class="firstname">
+                            <input type="text" placeholder="First name" id="firstname" onkeyup="nameValidation(this)">
+                            <i class="fa-solid fa-id-card firstnameIcon"></i>
+                        </div>
+                        <div class="lastname">
+                            <input type="text" placeholder="Last name" id="lastname" onkeyup="nameValidation(this)">
+                            <i class="fa-solid fa-id-card lastnameIcon"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="email">
+                        <input type="email" placeholder="Email" id="email">
+                        <i class="fa-solid fa-envelope emailIcon"></i>
+                    </div>
+                    <div class="password">
+                        <input type="password" placeholder="password "id="password">
+                        <i class="fa-solid fa-eye" id="show-password" ></i>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <div class="left">
+                        <button id="btnleft" type="submit">Change method</button>
+                    </div>
+                    <div class="right">
+                        <button id="btnright" type="submit" onclick="passwordValidation()">Create account</button>
+                    </div>
+                </div>
+                
+                
+                <!-- <button id="btn" type="submit" onclick="validate()">وارد شوید</button> -->
+               
+    
+            </form>
+
+            
+        </div>
+    </div>
+    <script src="app.js"></script>  
+</body>
+</html>
