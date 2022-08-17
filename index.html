@@ -32,24 +32,34 @@
             <form class="box" action="">
                 <div class="information">
                     <div class="name">
+
                         <div class="firstname">
-                            <input type="text" placeholder="First name" id="firstname" onkeyup="nameValidation(this)">
+                            <input type="text" id="firstname" onkeyup="nameValidation(this)" onblur="shrink('firstname','placeholderFirstname','345px','130px')">
+                            <label class="placeholderFirstname" id="placeholderFirstname">First name</label>
                             <i class="fa-solid fa-id-card firstnameIcon"></i>
                         </div>
+
                         <div class="lastname">
-                            <input type="text" placeholder="Last name" id="lastname" onkeyup="nameValidation(this)">
+                            <input type="text" id="lastname" onkeyup="nameValidation(this)" onblur="shrink('lastname','placeholderLastname', '345px','345px')">
+                            <label class="placeholderLastname" id="placeholderLastname">Last name</label>
                             <i class="fa-solid fa-id-card lastnameIcon"></i>
                         </div>
                         
                     </div>
+
                     <div class="email">
-                        <input type="email" placeholder="Email" id="email">
+                        <input type="email" id="email" onblur="shrink('email','placeholderEmail','410px','130px')">
+                        <label class="placeholderEmail" id="placeholderEmail">Email</label>
                         <i class="fa-solid fa-envelope emailIcon"></i>
                     </div>
+
                     <div class="password">
-                        <input type="password" placeholder="password "id="password">
+                        <input type="password" id="password" onblur="shrink('password','placeholderPassword','475px','130px')">
+                        <label class="placeholderPassword" id="placeholderPassword">Password</label>
                         <i class="fa-solid fa-eye" id="show-password" ></i>
+                        <span id="passwordError"></span>
                     </div>
+
                 </div>
 
                 <div class="buttons">
@@ -57,19 +67,12 @@
                         <button id="btnleft" type="submit">Change method</button>
                     </div>
                     <div class="right">
-                        <button id="btnright" type="submit" onclick="passwordValidation()">Create account</button>
+                        <button id="btnright" type="button" onclick="passwordValidation()">Create account</button>
                     </div>
                 </div>
-                
-                
-                <!-- <button id="btn" type="submit" onclick="validate()">وارد شوید</button> -->
-               
-    
             </form>
-
-            
         </div>
     </div>
-    <script src="app.js"></script>  
+    <script src="app.js"></script>
 </body>
 </html>

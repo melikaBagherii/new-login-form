@@ -109,9 +109,79 @@ a{
 
 
 
+
+
 ::placeholder{
     font-family:"Montserrat","Noto Sans Arabic","Vibes";
 }
+
+.box .placeholderFirstname,
+.box .placeholderLastname,
+.box .placeholderEmail,
+.box .placeholderPassword{
+    position:absolute;
+    color:lightgray;
+}
+
+.box .placeholderFirstname{
+    top: 355px;
+    left: 130px;
+}
+
+
+
+.box input:focus ~.placeholderFirstname
+{
+    position:absolute;
+    top: 345px;
+    left: 130px;
+    color:lightgray;
+    font-size: 9px;
+}
+
+.box .placeholderLastname{
+    top: 355px;
+    left: 345px;
+}
+
+.box input:focus ~.placeholderLastname
+{
+    position:absolute;
+    top: 345px;
+    left: 345px;
+    color:lightgray;
+    font-size: 9px;
+}
+
+.box .placeholderEmail{
+    top: 420px;
+    left: 130px;
+}
+
+.box input:focus ~.placeholderEmail{
+    position:absolute;
+    top: 410px;
+    left: 130px;
+    color:lightgray;
+    font-size: 9px;
+}
+
+
+.box .placeholderPassword{
+    top: 485px;
+    left: 130px;
+}
+
+.box input:focus ~.placeholderPassword
+{
+    position:absolute;
+    top: 475px;
+    left: 130px;
+    color:lightgray;
+    font-size: 9px;
+}
+
+
 
 button{
     font-family:"Montserrat","Noto Sans Arabic","Vibes";
@@ -124,15 +194,15 @@ button{
 .box input[type="text"],
 .box input[type="password"],
 .box input[type="email"]{
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 400;
     border: 0;
     background-color: #323544;
     display: block;
     margin: 20px auto;
     margin-left: 0px;
-    text-align: center;
-    padding: 14px 10px;
+    text-align: left;
+    padding: 14px 20px;
     width: 420px;
     outline: none;
     color: white;
@@ -140,16 +210,13 @@ button{
     box-sizing: border-box;
     /* transition: all .1s ease-in; */
 }
-#firstname{
-    width: 205px;
-    margin: 0px auto;
-}
-#lastname{
-    width: 205px;
-    margin: 0px auto;
-}
 
-/* .box input[type="text"]{
+#firstname, #lastname{
+    width: 205px;
+    margin: 0px auto;
+}
+/* #lastname{
+    width: 205px;
     margin: 0px auto;
 } */
 
@@ -173,7 +240,7 @@ button{
     box-shadow: 0px 0px 10px rgba(77, 147, 238,0.5);
 }
 
-
+/* buttons */
 
 .name,.buttons{
     display: flex;
@@ -209,32 +276,42 @@ button{
     width: 205px;
 }
 
+/* icons */
+
 .firstnameIcon{
     position: absolute;
     left: 278px;
-    top: 360px;
+    top: 357px;
     color: rgb(180,180,180);;
 }
 
 .lastnameIcon{
     position: absolute;
     left: 490px;
-    top: 360px;
+    top: 357px;
     color: rgb(180,180,180);;
 }
 
 .emailIcon{
     position: absolute;
     left: 490px;
-    top: 430px;
+    top: 421px;
     color: rgb(180,180,180);;
 }
 
 .fa-eye{
     position: absolute;
     left: 490px;
-    top: 502px;
+    top: 487px;
     color: rgb(180,180,180);
     cursor: pointer;
 }
 
+#passwordError{
+    color: red;
+    font-size: 10px;
+    position: absolute;
+    bottom: 170px;
+    left: 120px;
+    width: 300px;
+}
